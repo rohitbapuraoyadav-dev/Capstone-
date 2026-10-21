@@ -1,0 +1,10 @@
+region_code,region,states,assumed_member_millions,cost_index
+NCAL,Northern California,CA,4.5,1.2
+SCAL,Southern California,CA,4.8,1.15
+MAS,Mid-Atlantic States,"DC, MD, VA",0.82,1.05
+NW,Northwest (OR / SW WA),"OR, WA",0.63,1.05
+CO,Colorado,CO,0.52,1.0
+GA,Georgia,GA,0.32,0.92
+HI,Hawaii,HI,0.27,1.25
+WA,Washington,WA,0.6,1.05
+NV,Nevada,NV,0.1,1.0

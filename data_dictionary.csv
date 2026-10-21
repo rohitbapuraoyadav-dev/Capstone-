@@ -1,0 +1,41 @@
+table,column,type,description
+patient_master,patient_id,text (PK),"Unique patient key, PAT000001 to PAT010000"
+patient_master,age,int,Age in years (18-95) at start of study window
+patient_master,gender,text,Female / Male / Other
+patient_master,region_code,text,"KP-style region code: NCAL, SCAL, MAS, NW, CO, GA, HI, WA, NV"
+patient_master,region,text,Region name (see ref_regions)
+patient_master,state,text,US state or DC of the patient's city
+patient_master,city,text,City in the region's service area
+patient_master,coverage_plan,text,"Commercial (Employer), Medicare Advantage, Medicaid, ACA Marketplace"
+patient_master,lives_alone,int 0/1,1 = lives alone (social-risk factor)
+patient_master,distance_to_hospital_km,float,Distance from home to nearest hospital in km
+admissions,admission_id,text (PK),"Unique admission key, ADM0000001 onward, ordered by admission date"
+admissions,patient_id,text (FK),Links to patient_master
+admissions,hospital_id,text (FK),Links to ref_hospitals; hospital is always in the patient's region
+admissions,admission_date,date,Admission date
+admissions,discharge_date,date,Discharge date (= admission_date + length_of_stay)
+admissions,admission_type,text,Emergency / Urgent / Elective
+admissions,diagnosis,text,Primary diagnosis group
+admissions,diagnosis_code,text,ICD-10-CM code for the diagnosis group
+admissions,length_of_stay,int,Days in hospital
+admissions,discharge_disposition,text,Where the patient went after discharge
+admissions,readmitted_30_days,int 0/1 (TARGET),1 = patient has another admission 1-30 days after THIS discharge
+clinical_measures,admission_id,text (PK/FK),One row per admission
+clinical_measures,patient_id,text (FK),Links to patient_master
+clinical_measures,bmi,float,Body mass index (kg/m2)
+clinical_measures,hba1c,float,HbA1c percent; missing if not measured
+clinical_measures,systolic_bp,float,Systolic blood pressure mmHg
+clinical_measures,diastolic_bp,float,Diastolic blood pressure mmHg
+clinical_measures,medication_count,int,Number of active medications at discharge
+utilization,admission_id,text (PK/FK),One row per admission
+utilization,patient_id,text (FK),Links to patient_master
+utilization,er_visits,int,ER visits in the 12 months before this admission
+utilization,previous_admissions,int,Hospital admissions in the 12 months before this admission (history before Jan 2024 is synthetic)
+utilization,outpatient_visits_12m,int,Outpatient visits in the prior 12 months
+utilization,days_since_last_discharge,float,Days since previous discharge in the dataset; blank if none
+utilization,treatment_cost,float (USD),"Total cost of this admission in US dollars (synthetic, region-adjusted)"
+discharge_notes,admission_id,text (PK/FK),One row per admission
+discharge_notes,patient_id,text (FK),Links to patient_master
+discharge_notes,physician_notes,text,Synthetic discharge summary (blank for about 2% of rows)
+discharge_notes,follow_up_instructions,text,Follow-up plan given at discharge
+discharge_notes,follow_up_within_7_days,int 0/1,1 = follow-up care booked within 7 days of discharge

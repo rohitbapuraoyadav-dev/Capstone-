@@ -1,0 +1,24 @@
+hospital_id,hospital_name,region_code,region,state,city,bed_count
+NCAL-H01,San Jose Medical Center (synthetic),NCAL,Northern California,CA,San Jose,224
+NCAL-H02,San Francisco Medical Center (synthetic),NCAL,Northern California,CA,San Francisco,184
+NCAL-H03,Vallejo Medical Center (synthetic),NCAL,Northern California,CA,Vallejo,344
+NCAL-H04,Sacramento Medical Center (synthetic),NCAL,Northern California,CA,Sacramento,510
+SCAL-H01,Irvine Medical Center (synthetic),SCAL,Southern California,CA,Irvine,335
+SCAL-H02,Woodland Hills Medical Center (synthetic),SCAL,Southern California,CA,Woodland Hills,287
+SCAL-H03,Bakersfield Medical Center (synthetic),SCAL,Southern California,CA,Bakersfield,217
+SCAL-H04,Riverside Medical Center (synthetic),SCAL,Southern California,CA,Riverside,492
+MAS-H01,Alexandria Medical Center (synthetic),MAS,Mid-Atlantic States,VA,Alexandria,184
+MAS-H02,Washington Medical Center (synthetic),MAS,Mid-Atlantic States,DC,Washington,355
+MAS-H03,Largo Medical Center (synthetic),MAS,Mid-Atlantic States,MD,Largo,478
+NW-H01,Longview Medical Center (synthetic),NW,Northwest (OR / SW WA),WA,Longview,409
+NW-H02,Salem Medical Center (synthetic),NW,Northwest (OR / SW WA),OR,Salem,281
+CO-H01,Greeley Medical Center (synthetic),CO,Colorado,CO,Greeley,284
+CO-H02,Colorado Springs Medical Center (synthetic),CO,Colorado,CO,Colorado Springs,322
+GA-H01,Duluth Medical Center (synthetic),GA,Georgia,GA,Duluth,285
+GA-H02,Lawrenceville Medical Center (synthetic),GA,Georgia,GA,Lawrenceville,507
+HI-H01,Honolulu Medical Center (synthetic),HI,Hawaii,HI,Honolulu,178
+HI-H02,Lihue Medical Center (synthetic),HI,Hawaii,HI,Lihue,323
+WA-H01,Olympia Medical Center (synthetic),WA,Washington,WA,Olympia,233
+WA-H02,Everett Medical Center (synthetic),WA,Washington,WA,Everett,358
+NV-H01,North Las Vegas Medical Center (synthetic),NV,Nevada,NV,North Las Vegas,311
+NV-H02,Las Vegas Medical Center (synthetic),NV,Nevada,NV,Las Vegas,209

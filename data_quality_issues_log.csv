@@ -1,0 +1,36 @@
+table,record_id,column,issue,original_value,injected_value
+clinical_measures,(many),"hba1c, bmi, systolic_bp, diastolic_bp","random missing values (hba1c about 9%, bmi 3%, blood pressure 1%)",,blank
+discharge_notes,(many),physician_notes,blank notes (about 2%),,blank
+clinical_measures,ADM0008584,bmi,impossibly low BMI,29.7,5.0
+clinical_measures,ADM0012231,bmi,impossibly low BMI,27.8,5.0
+clinical_measures,ADM0004657,bmi,impossibly low BMI,20.5,4.2
+clinical_measures,ADM0004564,bmi,impossibly low BMI,31.8,5.0
+clinical_measures,ADM0013818,bmi,impossibly low BMI,34.4,3.1
+clinical_measures,ADM0013187,bmi,impossibly low BMI,33.1,5.0
+clinical_measures,ADM0007384,bmi,implausibly high BMI,29.2,85.0
+clinical_measures,ADM0005194,bmi,implausibly high BMI,22.8,92.3
+clinical_measures,ADM0010661,bmi,implausibly high BMI,38.0,78.4
+clinical_measures,ADM0014206,bmi,implausibly high BMI,16.0,78.4
+clinical_measures,ADM0013034,bmi,implausibly high BMI,31.9,92.3
+clinical_measures,ADM0013012,bmi,implausibly high BMI,32.6,92.3
+clinical_measures,ADM0010668,hba1c,impossible HbA1c (above 20%),9.4,24.0
+clinical_measures,ADM0008338,hba1c,impossible HbA1c (above 20%),5.3,28.8
+clinical_measures,ADM0000743,hba1c,impossible HbA1c (above 20%),5.4,24.0
+clinical_measures,ADM0006839,hba1c,impossible HbA1c (above 20%),5.5,24.0
+clinical_measures,ADM0007043,hba1c,impossible HbA1c (above 20%),4.5,28.8
+clinical_measures,ADM0004737,systolic_bp/diastolic_bp,systolic and diastolic swapped (systolic lower than diastolic),112.3/73.3,73.3/112.3
+clinical_measures,ADM0014805,systolic_bp/diastolic_bp,systolic and diastolic swapped (systolic lower than diastolic),156.5/87.8,87.8/156.5
+clinical_measures,ADM0012454,systolic_bp/diastolic_bp,systolic and diastolic swapped (systolic lower than diastolic),102.5/60.1,60.1/102.5
+clinical_measures,ADM0007118,systolic_bp/diastolic_bp,systolic and diastolic swapped (systolic lower than diastolic),121.0/81.6,81.6/121.0
+clinical_measures,ADM0012986,systolic_bp/diastolic_bp,systolic and diastolic swapped (systolic lower than diastolic),121.6/77.7,77.7/121.6
+clinical_measures,ADM0009192,systolic_bp/diastolic_bp,systolic and diastolic swapped (systolic lower than diastolic),110.3/68.6,68.6/110.3
+utilization,ADM0004425,treatment_cost,extreme cost outlier,42244.86,199580.46
+utilization,ADM0013858,treatment_cost,extreme cost outlier,9891.74,49930.21
+utilization,ADM0002066,treatment_cost,extreme cost outlier,20680.69,96528.64
+utilization,ADM0005662,treatment_cost,extreme cost outlier,64925.79,435400.92
+utilization,ADM0010925,treatment_cost,extreme cost outlier,4202.25,21707.52
+utilization,ADM0003959,treatment_cost,extreme cost outlier,7095.44,43689.91
+utilization,ADM0006799,treatment_cost,extreme cost outlier,10013.99,54840.85
+utilization,ADM0002047,treatment_cost,extreme cost outlier,11872.62,53173.17
+utilization,ADM0012848,treatment_cost,extreme cost outlier,20538.32,120073.89
+utilization,ADM0003023,treatment_cost,extreme cost outlier,15084.21,70775.04
